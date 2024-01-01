@@ -11,64 +11,150 @@
          body {
             background-color:#CCCCCC ;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-         }
+            }
 
-         .container {
-           background-color: hsla(271, 89%, 11%, 0.938);
-           margin: 10px 50px 20px;
-           
+            input {
+             width: 70%;
+             height: 22px;
+             padding: 0.9rem;
+             font-size: 1.5rem;
+             border-radius: 5px;
+             border: 0;
+             margin: 15px;
+             }
 
-           border-radius: 10px;
-           overflow: hidden;
-         }
-
-         .header {
-          color: #FECD23;
-          padding: 20px;
-          font-size: 40px;
-          font-weight: 620;
-          text-align: center;
+           .container {
+            background: linear-gradient(#1F0D22, #3A1441, #4C1955, #641F6F);
+            margin-top: 5px;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            }
+  
+           .header {
+           color: #FECD23;
+           padding: 20px;
+           font-size: 45px;
+           font-weight: 620;
+           text-align: center;
           
-         }
+            }
 
-         .header1 {
-          color: azure;
-          padding-right: 50px;
-          padding-left: 50px;
-          padding-top: 30px;
-          font-size: 25px;
-          text-align: center;
+           .header1 {
+            color: azure;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 30px;
+            font-size: 25px;
+            text-align: center;
           
-         }
+           }
 
-         .header2 {
-          color: azure;
-          padding-right: 50px;
-          padding-left: 50px;
-          padding-top: 30px;
-          font-size: 25px;
-          text-align: center;
-         }
+           .header2 {
+            color: azure;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 30px;
+            font-size: 25px;
+            text-align: center;
+           }
 
-         .header3 {
-          color: azure;
-          padding-right: 50px;
-          padding-left: 50px;
-          padding-top: 30px;
-          font-size: 25px;
-          text-align: center;
-         }
+           .header3 {
+            color: azure;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            font-size: 25px;
+            text-align: center;
+           }
 
-         .header4 {
-          color: azure;
-          padding-right: 50px;
-          padding-left: 50px;
-          padding-top: 100px;
-          font-size: 35px;
-          text-align: center;
-         }
+           .header4 {
+            color: azure;
+            padding-right: 10px;
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-bottom: 25px;
+            font-size: 40px;
+            text-align: center;
+           }
+
+           .form-register {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            border: 4px;
+            width: 100%;
+            
+            
+            }
+
+           .form-register1 {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 4px;
+            
+            }
+
+            .card {
+            background-color: #007BFF;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 50px;
+            margin: 30px 5px;
+            padding: 40px 34px;
+            margin-left: 75px;
+            margin-bottom: 25px;
+            
+            }
+
+            
+
+           .card h2 {
+           font-size: 35px;
+           text-align: left;
+           margin-top: 5px;
+           text-align: center;
+           }
+
+           .card img {
+           width: 200px; 
+           height: 180px;
+              
+           }
+
+           button {
+           background-color:black; 
+           font-size: 25px;
+           color:white; 
+           border-radius:5px;
+           margin-top: center; 
+           padding:15px; 
+           cursor: pointer;
+           padding-left: 40px;
+           padding-right: 40px;
+           }
+
+           .image-group {
+            text-align: center;
+             
+           }
+
+           .col1 {
+            background: linear-gradient(#641F6F, #4C1955, #3A1441, #1F0D22);
+            margin: 10px 50px 20px;
+            border-radius: 15px;
+
+           }
     </style>
 </head>
+
 
 
 <body>
@@ -89,31 +175,52 @@
            </div>
         </div>
 
-        <div>
+        
+
+        <div class="col1">
           <div class="header4">
             Digite os seus dados e escolha entre os três finalistas!
           </div>
 
-          <div>
-            Digite o seu nome
-          </div>
+          <div class="form-register">
 
-          <div>
-            Digite seu email
-          </div>
+              <input type="text" placeholder="Digite seu nome" />
+            
+            </div>
 
-          <div> 
-            Esportes  
-          </div>
+            <div class="form-register1">
 
-          <div>
-            Simulação
-          </div>
+              <input type="email" placeholder="Digite seu email" />
 
-          <div>
-            Estratégia
-          </div>
-        </div>
+            </div>
+          
+
+            <div class="card">
+              <h2>Esportes</h2>
+              <div class="image-group">
+              <img src="sports_soccer_FILL0_wght400_GRAD0_opsz24.svg" alt="Esportes">
+              </div>
+              <button>Votar</button>
+            </div>
+            
+            <div class="card">
+              <h2>Simulação</h2>
+              <div class="image-group">
+              <img src="airplanemode_active_FILL0_wght400_GRAD0_opsz24.svg" alt="Simulação">
+              </div>
+              <button>Votar</button>
+            </div>
+            
+            <div class="card">
+              <h2>Estratégia</h2>
+              <div class="image-group">
+              <img src="psychology_FILL0_wght400_GRAD0_opsz24.svg" alt="Estratégia">
+              </div>
+              <button>Votar</button>
+            </div>
+            </div>
+        </div>  
+          
     
 
 
